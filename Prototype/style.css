@@ -38,7 +38,17 @@ html {
 body {
   margin: 0;
 }
-
+footer {
+  padding:2em 2em;
+ margin: 0 auto;
+ text-align: center;
+ background-color:  #71cad2;
+ color: white;
+ text-decoration: none;
+ margin-bottom: 1em;
+ display: inline-block;
+ text-align:  center;
+}
 /* HTML5 display definitions
    ========================================================================== */
 
