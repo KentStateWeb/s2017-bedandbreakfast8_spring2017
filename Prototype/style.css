@@ -566,40 +566,9 @@ textarea {
   -webkit-appearance: none;
 }
 
-h1 {
-  font-size: 2em;
-  color: #f0592d;
-  text-align: center;
-  padding-top: 1em;
-}
-
-h2 {
-  font-size: 1.2em;
-  color: #71cad2;
-  text-align: center;
-  padding-bottom: .7em;
-}
-
-h3 {
-  text-size: 1.5em;
-  color: #f0592d;
-  text-transform: uppercase;
-  padding: 1em 0 1em 0;
-  margin-left: 2em;
-  font-weight: bold;
-}
-
-h4 {
-  text-size: 3em;
-  color: #08b1a9;
-  text-transform: uppercase;
-  font-weight: regular;
+main {
   margin-left: 2em;
 }
-p {
-  margin-left: 2em;
-}
-
 nav {
    padding: 2em 2em;
    margin: 1em;
@@ -630,4 +599,33 @@ img {
   margin-right: 5em;
   margin-left: 5em;
   align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #f0592d;
+  text-align: center;
+  padding-top: 1em;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #71cad2;
+  text-align: center;
+  padding-bottom: .7em;
+}
+
+h3 {
+  text-size: 1.5em;
+  color: #f0592d;
+  text-transform: uppercase;
+  padding: 1em 0 1em 0;
+  font-weight: bold;
+}
+
+h4 {
+  text-size: 3em;
+  color: #08b1a9;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
