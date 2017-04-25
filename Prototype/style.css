@@ -568,9 +568,10 @@ textarea {
 
 main {
   margin-left: 2em;
+  margin: 0 10% 0 10%
 }
+
 nav {
-   padding: 2em 2em;
    margin: 1em;
    text-align: center;
    background-color: #71cad2;
@@ -628,4 +629,19 @@ h4 {
   color: #08b1a9;
   text-transform: uppercase;
   font-weight: lighter;
+}
+
+@media screen and (min-width: 600px) {
+  .main-menu {
+    display: inline;
+    margin-top: 2em;
+    position: relative;
+  }
+  nav {
+    align: right;
+  }
+}
+
+nav li {
+  padding: 1em 1em 0 0;
 }
