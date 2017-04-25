@@ -88,12 +88,12 @@ nav[role=navigation] {
         nav[role=navigation] ul {
             margin: 0;
             padding: 0;
-            border-top: 1px solid #808080;
+          /*  border-top: 1px solid #808080;*/
         }
         nav[role=navigation] li a {
             display: block;
             padding: 0.8em;
-            border-bottom: 1px solid #808080;
+            /*border-bottom: 1px solid #808080;*/
         }
 
         @media screen and (min-width:800px) {
@@ -152,7 +152,7 @@ body {
   margin: 0;
 }
 footer {
-  padding:2em 2em;
+ padding:2em 2em;
  margin: 0 auto;
  text-align: center;
  background-color:  #71cad2;
@@ -595,11 +595,13 @@ nav a {
   font-style: bold;
 }
 
-img {
+.logo {
+  max-width: 50px;
   width: 150px;
+  margin-top: 1em;
   margin-right: 5em;
   margin-left: 5em;
-  align: center;
+  position: absolute;
 }
 
 h1 {
@@ -631,7 +633,11 @@ h4 {
   font-weight: lighter;
 }
 
-@media screen and (min-width: 600px) {
+p {
+  max-width: 990px;
+}
+
+@media screen and (max-width: 600px) {
   .main-menu {
     display: inline;
     margin-top: 2em;
@@ -640,8 +646,27 @@ h4 {
   nav {
     align: right;
   }
+
+  .logo {
+  width: 20px;
+  padding: 10px 0 0 10px;
+  margin: 15px;
+}
+
+  h1 {
+     font-size: 1.7em;
+     padding: 6px;
+   }
+  h2 {
+    font-size: 1.3em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  }
 }
 
 nav li {
   padding: 1em 1em 0 0;
+  hover:
 }
