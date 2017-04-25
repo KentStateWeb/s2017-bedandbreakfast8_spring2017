@@ -668,5 +668,8 @@ p {
 
 nav li {
   padding: 1em 1em 0 0;
-  hover:
+}
+
+nav li:hover {
+  text-decoration: underline;
 }
