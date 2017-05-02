@@ -439,7 +439,7 @@ list-style-type: none;
  }
  nav {
    margin: 1em;
-   text-align: center;
+   text-align: right;
    background-color: #71cad2;
    align: right;
    color: white;
