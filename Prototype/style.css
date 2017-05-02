@@ -29,6 +29,7 @@ justify-content: space-between;
 display: flex;
  }
 
+
  .rooms {
    padding: 2em;
    width: 90%;
@@ -75,6 +76,7 @@ list-style-type: none;
    list-style-type: none;
    text-align: left;
    line-height: normal;
+   font-size: .7em;
  }
 /*Hamburger Responsive Nav Styling*/
 
