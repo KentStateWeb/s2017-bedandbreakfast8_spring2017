@@ -460,10 +460,8 @@ list-style-type: none;
    font-style: bold;
  }
  .logo {
-   max-width: 50px;
-   margin-top: 1em;
-   margin-right: 5em;
-   margin-left: 5em;
+   max-width: 100px;
+   margin: 1.7em 5em 0 5em;
    position: absolute;
  }
  h1 {
@@ -551,6 +549,10 @@ nav li:hover {
  nav li {
    padding: 1em 1em 0 0;
  }
-
-
  }
+
+@media screen and (min-width: 600px) {
+
+  nav li {
+    padding: 2em 1em 1em 0;
+  }
