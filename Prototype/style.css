@@ -514,7 +514,6 @@ border-bottom: 1.2px solid #71cad2;
   margin-bottom: 4em;
   max-width: 35%;
   display: inline-block;
-  
 }
 
 
@@ -544,6 +543,14 @@ border-bottom: 1.2px solid #71cad2;
  }
  nav li:hover {
    text-decoration: underline;
+ }
+
+ .guest1, .guest2, .guest3, .guest4, .guest5, .visit {
+   background-color: #f2f9f9;
+   padding: 2em;
+   margin-bottom: 4em;
+   max-width: 35%;
+
  }
 
  }
