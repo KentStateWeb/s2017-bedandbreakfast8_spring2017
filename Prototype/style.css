@@ -1,686 +1,603 @@
 /* Additional Default Styles for Responsive */
-/* Hamburger Menu Begin*/
-html {
-  box-sizing: border-box;
-}
- /*Hamburger Responsive Nav Styling*/
 
- a.menu-link {
-        float: right;
-            display: block;
-            padding: 1em;
-              width: 125px;
-        }
+
+/* Hamburger Menu Begin*/
+
+html {
+ box-sizing: border-box;
+}
+
+footer {
+   padding: 2em 2em;
+   margin: 0 auto;
+   text-align: center;
+   background-color: #71cad2;
+   color: white;
+   text-decoration: none;
+   margin-bottom: 1em;
+   display: inline-block;
+   text-align: center;
+ }
+ .footer-nav {
+   display: flex;
+ }
+ .rooms {
+   padding: 2em;
+   width: 90%;
+   border-left: solid 4px #006d92;
+   margin-bottom: 1em;
+ }
+ .about {
+   padding: 2em;
+   width: 90%;
+   border-left: solid 4px #006d92;
+   margin-bottom: 1em;
+ }
+ .guestbook {
+   padding: 2em;
+   width: 90%;
+   border-left: solid 4px #006d92;
+   margin-bottom: 1em;
+ }
+ .reservations {
+   padding: 2em;
+   width: 90%;
+   border-left: solid 4px #006d92;
+   margin-bottom: 1em;
+ }
+ .contact {
+   padding: 2em;
+   width: 90%;
+   border-left: solid 4px #006d92;
+   margin-bottom: 1em;
+ }
+ .rooms,
+ .about,
+ .guestbook,
+ .reservations,
+ .contact {
+   display: flex;
+   justify-content: space-between;
+ }
+ .list {
+   display: block;
+   list-style-type: none;
+   text-align: left;
+   line-height: normal;
+ }
+/*Hamburger Responsive Nav Styling*/
+
+a.menu-link {
+ float: right;
+ display: block;
+ padding: 1em;
+ width: 125px;
+}
+
 
 /* Adds Code for Pure CSS Hamburger Button */
 
 .menu-link__hamburger {
-    margin: 0 auto;
-    text-align: center;
-    width: 33px;
-    float: left;
-    transform: translate(0,0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ margin: 0 auto;
+ text-align: center;
+ width: 33px;
+ float: left;
+ transform: translate(0, 0);
+ transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 .menu-link__label {
-    float: left;
-    padding-left: .75em;
+ float: left;
+ padding-left: .75em;
 }
 
 a.menu-link span {
-  display: block;
-  height: 5px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #cdcdcd;
-  border-radius: 3px; /* Adjust the rounding of the hamburger here */
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+ display: block;
+ height: 5px;
+ margin-bottom: 5px;
+ position: relative;
+ background: #cdcdcd;
+ border-radius: 3px;
+ /* Adjust the rounding of the hamburger here */
+ z-index: 1;
+ transform-origin: 4px 0px;
+ transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
 }
 
 a.menu-link span:first-child {
-  transform-origin: 0% 0%;
+ transform-origin: 0% 0%;
 }
 
-
 a.menu-link span:nth-child(3) {
-  transform-origin: 0% 100%;
+ transform-origin: 0% 100%;
 }
 
 .menu-link.active .menu-link__hamburger {
-    transform: translate(10px, 0);
+ transform: translate(10px, 0);
 }
 
 .menu-link.active span {
-  opacity: 1;
-    background: black;
-  transform: rotate(45deg) translate(-2px, -1px);
+ opacity: 1;
+ background: black;
+ transform: rotate(45deg) translate(-2px, -1px);
 }
 
 .menu-link.active span:nth-child(2) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+ opacity: 0;
+ transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.menu-link.active span:nth-child(3){
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
+.menu-link.active span:nth-child(3) {
+ opacity: 1;
+ transform: rotate(-45deg) translate(0, -1px);
 }
 
 nav[role=navigation] {
-            clear: both;
-            -webkit-transition: all 0.3s ease-out;
-            -moz-transition: all 0.3s ease-out;
-            -ms-transition: all 0.3s ease-out;
-            -o-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out;
-        }
-        .js nav[role=navigation] {
-            overflow: hidden;
-            max-height: 0;
-        }
-        nav[role=navigation].active {
-            max-height: 15em;
-        }
-        nav[role=navigation] ul {
-            margin: 0;
-            padding: 0;
-            border-top: 1px solid #808080;
-        }
-        nav[role=navigation] li a {
-            display: block;
-            padding: 0.8em;
-            border-bottom: 1px solid #808080;
-        }
+ clear: both;
+ -webkit-transition: all 0.3s ease-out;
+ -moz-transition: all 0.3s ease-out;
+ -ms-transition: all 0.3s ease-out;
+ -o-transition: all 0.3s ease-out;
+ transition: all 0.3s ease-out;
+}
 
-        @media screen and (min-width:800px) {
-            a.menu-link {
-               display: none;
-            }
-            .js nav[role=navigation] {
-                max-height: none;
-            }
-            nav[role=navigation] ul {
-                margin: 0 0 0 -0.25em;
-                border: 0;
-            }
+.js nav[role=navigation] {
+ overflow: hidden;
+ max-height: 0;
+}
 
-            nav[role=navigation]  li {
-                display: inline-block;
-                margin: 0 0.25em;
-            }
-            nav[role=navigation] li a {
-                border: 0;
-            }
-        }
+nav[role=navigation].active {
+ max-height: 15em;
+}
+
+nav[role=navigation] ul {
+ margin: 0;
+ padding: 0;
+ border-top: 1px solid #808080;
+}
+
+nav[role=navigation] li a {
+ display: block;
+ padding: 0.8em;
+ border-bottom: 1px solid #808080;
+}
+
+@media screen and (min-width: 800px) {
+ a.menu-link {
+   display: none;
+ }
+ .js nav[role=navigation] {
+   max-height: none;
+ }
+ nav[role=navigation] ul {
+   margin: 0 0 0 -0.25em;
+   border: 0;
+ }
+ nav[role=navigation] li {
+   display: inline-block;
+   margin: 0 0.25em;
+ }
+ nav[role=navigation] li a {
+   border: 0;
+   color: red;
+ }
+}
+
+
 /*End Hamburger Responsive Nav Styling*/
 
-<<<<<<< Updated upstream
+
 /*Modal Buttons*/
-* {
-  box-sizing: border-box;
-=======
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
-img, object, video, iframe {
-  max-width: 100%;
-  height: auto;
-  -ms-interpolation-mode: bicubic;
-  display: inline-block;
-  vertical-align: middle;
-margin-top: 40px;
-align-content: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-main img {
- align-content: center;
- display: flex;
- width: 500px;
-}
-
-html,
-body {
-  width: 100%;
-}
-
-.btn {
-  padding: 1rem;
-  background: #f0592d;
-  color: #FFF;
-    margin: 2rem;
-  display: inline-block;
-}
-
-/* This is the translucent area that covers the screen when the modal is active */
-.overlay {
-    background: rgba(0,0,0,.5);
-    position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.modal {
-  visibility: hidden;
-}
-
-/* Styling for the modal box itself.  Mins, max and top values can be changed to suit your needs.  You can also vertically center by setting top and bottom to 0 and adding a set height.  However, this doesn't allow for flexible height content. */
-.modal__contents {
-  background: white;
-  min-width: 32rem;
-    max-width: 80%;
-    min-height: 30vh;
-    top: 15%;
-    margin: auto;
-  position: absolute;
-    left: 0;
-    right: 0;
-    padding: 2rem;
-}
-
-/* Close Icon for Modal */
-.modal__close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  text-decoration: none;
-  display: block;
-    font-size: 2rem;
-    color: black;
-    padding: 1rem 2rem;
-}
-
-.modal--show {
-  visibility: visible;
-}
-
-.modal--transition {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7);
-    opacity: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.modal--show .modal--transition {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-}
-
-/* Desktop first media queries are overwritten here to allow the modal to take up the entire screen when the screen reaches a smaller width */
-@media (max-width : 48rem) {
-
-  .modal__contents {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    margin: 0;
-        min-width: inherit;
-        max-height: inherit;
-        max-width: inherit;
-  }
-
-
-  .modal--transition {
-    -webkit-transform: translateX(-0) translateY(150%);
-    -moz-transform: translateX(-0) translateY(150%);
-    -ms-transform: translateX(-0) translateY(150%);
-    transform: translateX(-0) translateY(150%);
-  }
-
-}
-
-/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
-
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
- */
-
-html {
-  font-family: "Muli", sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
->>>>>>> Stashed changes
-}
-
-html,
-body {
-<<<<<<< Updated upstream
-  width: 100%;
-=======
-  margin: 0;
-}
-footer {
-<<<<<<< Updated upstream
- padding:2em 2em;
- margin: 0 auto;
- text-align: center;
- background-color:  #71cad2;
- color: white;
- text-decoration: none;
- margin-bottom: 1em;
- display: inline-block;
- text-align:  center;
-
-  padding:2em 2em;
-  margin: 0 auto;
-  background-color:  #71cad2;
-  color: white;
-  text-decoration: none;
-  margin-bottom: 1em;
-  display: block;
-  list-style-type: none;
-  padding: 1em;
-}
-
-.footer-nav {
-  display: flex;
-}
-
-.rooms {
-
-	padding: 2em;
- width: 90%;
-	border-left: solid 4px #006d92;
-	margin-bottom: 1em;
-
-}
-.about {
-
-	padding: 2em;
- width: 90%;
-	border-left: solid 4px #006d92;
-	margin-bottom: 1em;
-}
-.guestbook {
-
-	padding: 2em;
- width: 90%;
-	border-left: solid 4px #006d92;
-	margin-bottom: 1em;
-}
-.reservations {
-
-	padding: 2em;
- width: 90%;
-	border-left: solid 4px #006d92;
-	margin-bottom: 1em;
-}
-.contact {
-
-	padding: 2em;
- width: 90%;
-	border-left: solid 4px #006d92;
-	margin-bottom: 1em;
-}
-.rooms, .about, .guestbook, .reservations, .contact {
-    display: flex;
-    justify-content: space-between;
-}
-.list {
-  display: block;
-  list-style-type: none;
-  text-align: left;
-  line-height: normal;
->>>>>>> Stashed changes
-}
-/* HTML5 display definitions
-
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
- */
-
-
-
-
-article,
-aside,
-details, /* 1 */
-figcaption,
-figure,
-footer,
-header,
-main, /* 2 */
-menu,
-nav,
-section,
-summary { /* 1 */
-  display: block;
->>>>>>> Stashed changes
-}
-
-.btn {
-  padding: 1rem;
-  background:black;
-  color: #FFF;
-    margin: 2rem;
-  display: inline-block;
-}
-
-/* This is the translucent area that covers the screen when the modal is active */
-.overlay {
-    background: rgba(0,0,0,.5);
-    position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.modal {
-  visibility: hidden;
-}
-
-/* Styling for the modal box itself.  Mins, max and top values can be changed to suit your needs.  You can also vertically center by setting top and bottom to 0 and adding a set height.  However, this doesn't allow for flexible height content. */
-.modal__contents {
-  background: white;
-  min-width: 32rem;
-    max-width: 80%;
-    min-height: 30vh;
-    top: 15%;
-    margin: auto;
-  position: absolute;
-    left: 0;
-    right: 0;
-    padding: 2rem;
-}
-
-/* Close Icon for Modal */
-.modal__close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  text-decoration: none;
-  display: block;
-    font-size: 2rem;
-    color: black;
-    padding: 1rem 2rem;
-}
-
-.modal--show {
-  visibility: visible;
-}
-
-.modal--transition {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7);
-    opacity: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.modal--show .modal--transition {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-}
-
-/* Desktop first media queries are overwritten here to allow the modal to take up the entire screen when the screen reaches a smaller width */
-@media (max-width : 48rem) {
-
-  .modal__contents {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    margin: 0;
-        min-width: inherit;
-        max-height: inherit;
-        max-width: inherit;
-  }
-
-
-  .modal--transition {
-    -webkit-transform: translateX(-0) translateY(150%);
-    -moz-transform: translateX(-0) translateY(150%);
-    -ms-transform: translateX(-0) translateY(150%);
-    transform: translateX(-0) translateY(150%);
-  }
-
-}
-
-/*End Modal Button Style*/
-
-
-body {
-  margin: 0;
-}
-
-/* Footer Styling*/
-footer {
- padding:2em 2em;
- margin: 0 auto;
- text-align: center;
- background-color:  #71cad2;
- color: white;
- text-decoration: none;
- margin-bottom: 1em;
- display: inline-block;
- text-align:  center;
-
-  padding:2em 2em;
-  margin: 0 auto;
-  background-color:  #71cad2;
-  color: white;
-  text-decoration: none;
-  margin-bottom: 1em;
-  display: block;
-  list-style-type: none;
-  padding: 1em;
-}
-
-.footer-nav {
-  display: flex;
-}
-
-.rooms {
-
-	padding: 2em;
- width: 90%;
-	border-left: solid 4px #006d92;
-	margin-bottom: 1em;
-
-}
-.about {
-
-	padding: 2em;
- width: 90%;
-	border-left: solid 4px #006d92;
-	margin-bottom: 1em;
-}
-
-.guestbook {
-	padding: 2em;
-  width: 90%;
-	border-left: solid 4px #006d92;
-	margin-bottom: 1em;
-}
-
-.reservations {
-	padding: 2em;
-  width: 90%;
-	border-left: solid 4px #006d92;
-	margin-bottom: 1em;
-}
-
-.contact {
-	padding: 2em;
-  width: 90%;
-	border-left: solid 4px #006d92;
-	margin-bottom: 1em;
-}
-
-.rooms, .about, .guestbook, .reservations, .contact {
-    display: flex;
-    justify-content: space-between;
-}
-
-.list {
-  display: block;
-  list-style-type: none;
-  text-align: left;
-  line-height: normal;
-}
-
-/*End Footer Styling*/
-
-
-<<<<<<< Updated upstream
-main {
-  margin-left: 2em;
-  margin: 0 10% 0 10%
-}
-
-.logo {
-  max-width: 50px;
-  margin-top: 1em;
-  margin-right: 5em;
-  margin-left: 5em;
-  position: absolute;
-  padding: 25px;
-}
-
-nav {
+*
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+ }
+ img,
+ object,
+ video,
+ iframe {
+   max-width: 100%;
+   height: auto;
+   -ms-interpolation-mode: bicubic;
+   display: inline-block;
+   vertical-align: middle;
+   margin-top: 40px;
+   align-content: center;
+ }
+ * {
+   box-sizing: border-box;
+ }
+ main img {
+   align-content: center;
+   display: flex;
+   width: 500px;
+ }
+ html,
+ body {
+   width: 100%;
+ }
+ .btn {
+   padding: 1rem;
+   background: #f0592d;
+   color: #FFF;
+   margin: 2rem;
+   display: inline-block;
+ }
+ /* This is the translucent area that covers the screen when the modal is active */
+ .overlay {
+   background: rgba(0, 0, 0, .5);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+ .modal {
+   visibility: hidden;
+ }
+ /* Styling for the modal box itself.  Mins, max and top values can be changed to suit your needs.  You can also vertically center by setting top and bottom to 0 and adding a set height.  However, this doesn't allow for flexible height content. */
+ .modal__contents {
+   background: white;
+   min-width: 32rem;
+   max-width: 80%;
+   min-height: 30vh;
+   top: 15%;
+   margin: auto;
+   position: absolute;
+   left: 0;
+   right: 0;
+   padding: 2rem;
+ }
+ /* Close Icon for Modal */
+ .modal__close {
+   position: absolute;
+   right: 0;
+   top: 0;
+   text-decoration: none;
+   display: block;
+   font-size: 2rem;
+   color: black;
+   padding: 1rem 2rem;
+ }
+ .modal--show {
+   visibility: visible;
+ }
+ .modal--transition {
+   -webkit-transform: scale(0.7);
+   -moz-transform: scale(0.7);
+   -ms-transform: scale(0.7);
+   transform: scale(0.7);
+   opacity: 0;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+ }
+ .modal--show .modal--transition {
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   opacity: 1;
+ }
+ /* Desktop first media queries are overwritten here to allow the modal to take up the entire screen when the screen reaches a smaller width */
+ @media (max-width: 48rem) {
+   .modal__contents {
+     top: 0;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     margin: 0;
+     min-width: inherit;
+     max-height: inherit;
+     max-width: inherit;
+   }
+   .modal--transition {
+     -webkit-transform: translateX(-0) translateY(150%);
+     -moz-transform: translateX(-0) translateY(150%);
+     -ms-transform: translateX(-0) translateY(150%);
+     transform: translateX(-0) translateY(150%);
+   }
+ }
+ /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+ /**
+* 1. Change the default font family in all browsers (opinionated).
+* 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+*/
+ html {
+   font-family: "Muli", sans-serif;
+   /* 1 */
+   -ms-text-size-adjust: 100%;
+   /* 2 */
+   -webkit-text-size-adjust: 100%;
+   /* 2 */
+ }
+ html,
+ body {
+   width: 100%;
+   margin: 0;
+ }
+
+ /* HTML5 display definitions
+
+  ========================================================================== */
+ /**
+* Add the correct display in IE 9-.
+* 1. Add the correct display in Edge, IE, and Firefox.
+* 2. Add the correct display in IE.
+*/
+ article,
+ aside,
+ details,
+ /* 1 */
+ figcaption,
+ figure,
+ footer,
+ header,
+ main,
+ /* 2 */
+ menu,
+ nav,
+ section,
+ summary {
+   /* 1 */
+   display: block;
+ }
+ .btn {
+   padding: 1rem;
+   background: black;
+   color: #FFF;
+   margin: 2rem;
+   display: inline-block;
+ }
+ /* This is the translucent area that covers the screen when the modal is active */
+ .overlay {
+   background: rgba(0, 0, 0, .5);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+ .modal {
+   visibility: hidden;
+ }
+ /* Styling for the modal box itself.  Mins, max and top values can be changed to suit your needs.  You can also vertically center by setting top and bottom to 0 and adding a set height.  However, this doesn't allow for flexible height content. */
+ .modal__contents {
+   background: white;
+   min-width: 32rem;
+   max-width: 80%;
+   min-height: 30vh;
+   top: 15%;
+   margin: auto;
+   position: absolute;
+   left: 0;
+   right: 0;
+   padding: 2rem;
+ }
+ /* Close Icon for Modal */
+ .modal__close {
+   position: absolute;
+   right: 0;
+   top: 0;
+   text-decoration: none;
+   display: block;
+   font-size: 2rem;
+   color: black;
+   padding: 1rem 2rem;
+ }
+ .modal--show {
+   visibility: visible;
+ }
+ .modal--transition {
+   -webkit-transform: scale(0.7);
+   -moz-transform: scale(0.7);
+   -ms-transform: scale(0.7);
+   transform: scale(0.7);
+   opacity: 0;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+ }
+ .modal--show .modal--transition {
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   opacity: 1;
+ }
+ /* Desktop first media queries are overwritten here to allow the modal to take up the entire screen when the screen reaches a smaller width */
+ @media (max-width: 48rem) {
+   .modal__contents {
+     top: 0;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     margin: 0;
+     min-width: inherit;
+     max-height: inherit;
+     max-width: inherit;
+   }
+   .modal--transition {
+     -webkit-transform: translateX(-0) translateY(150%);
+     -moz-transform: translateX(-0) translateY(150%);
+     -ms-transform: translateX(-0) translateY(150%);
+     transform: translateX(-0) translateY(150%);
+   }
+ }
+ /*End Modal Button Style*/
+ body {
+   margin: 0;
+ }
+ /* Footer Styling*/
+ footer {
+   padding: 2em 2em;
+   margin: 0 auto;
+   text-align: center;
+   background-color: #71cad2;
+   color: white;
+   text-decoration: none;
+   margin-bottom: 1em;
+   display: inline-block;
+   text-align: center;
+   padding: 2em 2em;
+   margin: 0 auto;
+   background-color: #71cad2;
+   color: white;
+   text-decoration: none;
+   margin-bottom: 1em;
+   display: block;
+   list-style-type: none;
+   padding: 1em;
+ }
+ .footer-nav {
+   display: flex;
+ }
+ .rooms {
+   padding: 2em;
+   width: 90%;
+   border-left: solid 4px #006d92;
+   margin-bottom: 1em;
+ }
+ .about {
+   padding: 2em;
+   width: 90%;
+   border-left: solid 4px #006d92;
+   margin-bottom: 1em;
+ }
+ .guestbook {
+   padding: 2em;
+   width: 90%;
+   border-left: solid 4px #006d92;
+   margin-bottom: 1em;
+ }
+ .reservations {
+   padding: 2em;
+   width: 90%;
+   border-left: solid 4px #006d92;
+   margin-bottom: 1em;
+ }
+ .contact {
+   padding: 2em;
+   width: 90%;
+   border-left: solid 4px #006d92;
+   margin-bottom: 1em;
+ }
+ .rooms,
+ .about,
+ .guestbook,
+ .reservations,
+ .contact {
+   display: flex;
+   justify-content: space-between;
+ }
+ .list {
+   display: block;
+   list-style-type: none;
+   text-align: left;
+   line-height: normal;
+ }
+ /*End Footer Styling*/
+ main {
+   margin-left: 2em;
+   margin: 0 10% 0 10%
+ }
+ .logo {
+   max-width: 50px;
+   margin-top: 1em;
+   margin-right: 5em;
+   margin-left: 5em;
+   position: absolute;
+   padding: 25px;
+ }
+ nav {
    margin: 1em;
    text-align: center;
    background-color: #71cad2;
    align: right;
-  }
+   color: white;
+   text-decoration: none;
+ }
+ nav ul {
+   list-style-type: none;
+   padding: 2em;
+   /*background-color: rgb(113, 202, 210);*/
+   /*justify-content: space-around;*/
+   text-transform: uppercase;
+   font-style: bold;
+ }
+ nav a {
+   color: white;
+   text-decoration: none;
+   margin-bottom: 1em;
+   display: inline-block;
+   text-align: center;
+   font-style: bold;
+ }
+ .logo {
+   max-width: 50px;
+   margin-top: 1em;
+   margin-right: 5em;
+   margin-left: 5em;
+   position: absolute;
+ }
+ h1 {
+   font-size: 2em;
+   color: #f0592d;
+   text-align: center;
+   padding-top: 1em;
+ }
+ h2 {
+   font-size: 1.2em;
+   color: #71cad2;
+   text-align: center;
+   padding-bottom: .7em;
+ }
+ h3 {
+   text-size: 1.5em;
+   color: #f0592d;
+   text-transform: uppercase;
+   padding: 1em 0 1em 0;
+   margin-left: 2em;
+   font-weight: bold;
+ }
+ h4 {
+   text-size: 3em;
+   color: #08b1a9;
+   text-transform: uppercase;
+   font-weight: regular;
+   margin-left: 2em;
+ }
+ p {
+   margin-left: 2em;
+   max-width: 990px;
+ }
+ @media screen and (max-width: 600px) {
+   .main-menu {
+     display: inline;
+     margin-top: 2em;
+     position: relative;
+   }
+   nav {
+     align: right;
 
-nav ul {
-  list-style-type: none;
-  padding: 2em;
-  /*background-color: rgb(113, 202, 210);*/
-  /*justify-content: space-around;*/
-  text-transform: uppercase;
-  font-style: bold;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-bottom: 1em;
-  display: inline-block;
-  text-align: center;
-  font-style: bold;
-}
-
-<<<<<<< Updated upstream
-=======
-.logo {
-  max-width: 50px;
-  margin-top: 1em;
-  margin-right: 5em;
-  margin-left: 5em;
-  position: absolute;
-}
-
-
->>>>>>> Stashed changes
-h1 {
-  font-size: 2em;
-  color: #f0592d;
-  text-align: center;
-  padding-top: 1em;
-}
-
-h2 {
-  font-size: 1.2em;
-  color: #71cad2;
-  text-align: center;
-  padding-bottom: .7em;
-}
-
-h3 {
-  text-size: 1.5em;
-  color: #f0592d;
-  text-transform: uppercase;
-  padding: 1em 0 1em 0;
-  margin-left: 2em;
-  font-weight: bold;
-}
-
-h4 {
-  text-size: 3em;
-  color: #08b1a9;
-  text-transform: uppercase;
-  font-weight: regular;
-  margin-left: 2em;
-<<<<<<< Updated upstream
-=======
-}
-p {
-  margin-left: 2em;
->>>>>>> Stashed changes
-}
-
-p {
-  margin-left: 2em;
-  max-width: 990px;
-}
-
-@media screen and (max-width: 600px) {
-  .main-menu {
-    display: inline;
-    margin-top: 2em;
-    position: relative;
-  }
-
-  nav {
-    align: right;
-  }
-
-  h1 {
+   }
+   h1 {
      font-size: 1.7em;
      padding: 6px;
    }
-  h2 {
-    font-size: 1.3em;
-  }
-  h3 {
-    font-size: 1em;
-  }
-}
-
-nav li {
-  padding: 1em 1em 0 0;
-}
-
-nav li:hover {
-  text-decoration: underline;
-}
-
-@media screen and (min-width: 400px) {
-footer {
-  display: none;
-}
-}
+   h2 {
+     font-size: 1.3em;
+   }
+   h3 {
+     font-size: 1em;
+   }
+ }
+ nav li {
+   padding: 1em 1em 0 0;
+ }
+ nav li:hover {
+   text-decoration: underline;
+ }
