@@ -511,8 +511,12 @@ border-bottom: 1.2px solid #71cad2;
 .guest1, .guest2, .guest3, .guest4, .guest5, .visit {
   background-color: #f2f9f9;
   padding: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
+  max-width: 35%;
+  display: inline-block;
+  
 }
+
 
  @media screen and (max-width: 600px) {
    .main-menu {
