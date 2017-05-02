@@ -499,6 +499,16 @@ list-style-type: none;
    margin-left: 2em;
    max-width: 990px;
  }
+ .info {
+
+   text-decoration: none;
+   list-style-type: none;
+   font-size: 1.2em;
+   line-height: 2em;
+   justify-content: space-between;
+   display: inline-block;
+}
+
 .package {
 border-bottom: 1.2px solid #71cad2;
 
@@ -510,9 +520,19 @@ border-bottom: 1.2px solid #71cad2;
  }
  .sweet {
    margin-top: 3em;
+   display: flex;
  }
-   )
- @media screen and (max-width: 600px) {
+ .sweetpic {
+   display: flex;
+   max-width: 100%;
+ }
+ .sweet_info {
+
+}
+
+
+
+@media screen and (max-width: 600px) {
    .main-menu {
      display: inline;
      margin-top: 2em;
@@ -532,12 +552,14 @@ border-bottom: 1.2px solid #71cad2;
    h3 {
      font-size: 1em;
    }
- }
- nav li {
-   padding: 1em 1em 0 0;
- }
- nav li:hover {
-   text-decoration: underline;
- }
 
- }
+   nav li {
+     padding: 1em 1em 0 0;
+   }
+   nav li:hover {
+     text-decoration: underline;
+   }
+  footer {
+    display: none;
+  }
+}
