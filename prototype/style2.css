@@ -1,0 +1,92 @@
+main {
+  margin-left: 2em;
+  margin: 0 10% 0 10%
+}
+
+p {
+  background-color: blue; 
+}
+
+.logo {
+  max-width: 50px;
+  margin-top: 1em;
+  margin-right: 5em;
+  margin-left: 5em;
+  position: absolute;
+  padding: 25px;
+}
+
+nav {
+   margin: 1em;
+   text-align: center;
+   background-color: #71cad2;
+   align: right;
+  }
+
+nav ul {
+  list-style-type: none;
+  padding: 2em;
+  /*background-color: rgb(113, 202, 210);*/
+  /*justify-content: space-around;*/
+  text-transform: uppercase;
+  font-style: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1em;
+  display: inline-block;
+  text-align: center;
+  font-style: bold;
+}
+
+<<<<<<< Updated upstream
+=======
+.logo {
+  max-width: 50px;
+  margin-top: 1em;
+  margin-right: 5em;
+  margin-left: 5em;
+  position: absolute;
+}
+
+h1 {
+  font-size: 2em;
+  color: #f0592d;
+  text-align: center;
+  padding-top: 1em;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #71cad2;
+  text-align: center;
+  padding-bottom: .7em;
+}
+
+h3 {
+  text-size: 1.5em;
+  color: #f0592d;
+  text-transform: uppercase;
+  padding: 1em 0 1em 0;
+  margin-left: 2em;
+  font-weight: bold;
+}
+
+h4 {
+  text-size: 3em;
+  color: #08b1a9;
+  text-transform: uppercase;
+  font-weight: regular;
+  margin-left: 2em;
+}
+
+p {
+  margin-left: 2em;
+}
+
+p {
+  margin-left: 2em;
+  max-width: 990px;
+}
