@@ -514,11 +514,14 @@ border-bottom: 1.2px solid #71cad2;
   max-width: 100%;
   background-color: #f2f9f9;
   padding: 2em;
-  margin: 0 0  0 20%;
+  margin: 0 20% 0 20%;
   margin-bottom: 3em;
 
 }
 
+nav li:hover {
+  text-decoration: underline;
+}
 
 
  @media screen and (max-width: 600px) {
@@ -533,12 +536,12 @@ border-bottom: 1.2px solid #71cad2;
    }
 
    h1 {
-     font-size: 1.2em;
+     font-size: 1.5em;
      padding: 20px;
    }
 
    h2 {
-     font-size: 1.3em;
+     font-size: 1.2em;
    }
 
    h3 {
@@ -549,16 +552,5 @@ border-bottom: 1.2px solid #71cad2;
    padding: 1em 1em 0 0;
  }
 
- nav li:hover {
-   text-decoration: underline;
- }
-
- .guest1, .guest2, .guest3, .guest4, .guest5, .visit {
-   background-color: #f2f9f9;
-   padding: 2em;
-   margin-bottom: 4em;
-   max-width: 35%;
-   display: inline-block;
- }
 
  }
