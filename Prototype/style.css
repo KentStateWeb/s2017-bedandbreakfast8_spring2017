@@ -502,12 +502,18 @@ border-bottom: 1.2px solid #71cad2;
  .sweet, .tree, .enchantment, .safari {
    background-color: #f2f9f9;
  padding: 1em;
- margin-bottom: 2 em;
+ margin-bottom: 2em;
  }
  .sweet {
    margin-top: 3em;
  }
-   )
+
+.guest1, .guest2, .guest3, .guest4, .guest5, .visit {
+  background-color: #f2f9f9;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
  @media screen and (max-width: 600px) {
    .main-menu {
      display: inline;
