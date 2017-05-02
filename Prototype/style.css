@@ -425,14 +425,12 @@ list-style-type: none;
    margin-left: 2em;
    margin: 0 10% 0 10%
  }
- .logo {
-   max-width: 50px;
-   margin-top: 1em;
-   margin-right: 5em;
-   margin-left: 5em;
-   position: absolute;
-   padding: 25px;
- }
+
+.logo {
+  width: 85%;
+  max-width: 100px;
+  margin: 12px;
+}
  nav {
    margin: 0 0 1em 0;
    text-align: right;
