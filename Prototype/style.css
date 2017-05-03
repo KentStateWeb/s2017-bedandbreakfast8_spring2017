@@ -29,6 +29,7 @@ justify-content: space-between;
 display: flex;
  }
 
+
  .rooms {
    padding: 2em;
    width: 90%;
@@ -75,6 +76,7 @@ list-style-type: none;
    list-style-type: none;
    text-align: left;
    line-height: normal;
+   font-size: .7em;
  }
 /*Hamburger Responsive Nav Styling*/
 
@@ -164,11 +166,13 @@ nav[role=navigation].active {
 nav[role=navigation] ul {
  margin: 0;
  padding: 0;
+ border-top: 1px solid #808080;
 }
 
 nav[role=navigation] li a {
  display: block;
  padding: 0.8em;
+ border-bottom: 1px solid #808080;
 }
 
 @media screen and (min-width: 800px) {
@@ -425,23 +429,22 @@ list-style-type: none;
    margin-left: 2em;
    margin: 0 10% 0 10%
  }
-
-/*
-.logo {
-  width: 85%;
-  max-width: 100px;
-  margin: 12px;
-} */
-
+ .logo {
+   max-width: 50px;
+   margin-top: 1em;
+   margin-right: 5em;
+   margin-left: 5em;
+   position: absolute;
+   padding: 25px;
+ }
  nav {
-   margin: 0 0 1em 0;
+   margin: 1em;
    text-align: right;
    background-color: #71cad2;
    align: right;
    color: white;
    text-decoration: none;
  }
-
  nav ul {
    list-style-type: none;
    padding: 2em;
@@ -450,7 +453,6 @@ list-style-type: none;
    text-transform: uppercase;
    font-style: bold;
  }
-
  nav a {
    color: white;
    text-decoration: none;
@@ -460,8 +462,10 @@ list-style-type: none;
    font-style: bold;
  }
  .logo {
-   max-width: 100px;
-   margin: 1.7em 5em 0 5em;
+   max-width: 50px;
+   margin-top: 1em;
+   margin-right: 5em;
+   margin-left: 5em;
    position: absolute;
  }
  h1 {
@@ -477,7 +481,7 @@ list-style-type: none;
    padding-bottom: .7em;
  }
  h3 {
-   font-size: 1.5em;
+   text-size: 1.5em;
    color: #f0592d;
    text-transform: uppercase;
    padding: 1em 0 1em 0;
@@ -492,8 +496,18 @@ list-style-type: none;
    margin-left: 2em;
  }
  p {
+   margin-left: 2em;
    max-width: 990px;
  }
+ .info {
+
+   text-decoration: none;
+   list-style-type: none;
+   font-size: 1.2em;
+   line-height: 2em;
+   justify-content: space-between;
+   display: inline-block;
+}
 
 .package {
 border-bottom: 1.2px solid #71cad2;
@@ -502,57 +516,50 @@ border-bottom: 1.2px solid #71cad2;
  .sweet, .tree, .enchantment, .safari {
    background-color: #f2f9f9;
  padding: 1em;
- margin-bottom: 2em;
+ margin-bottom: 2 em;
  }
  .sweet {
    margin-top: 3em;
+   display: flex;
  }
-
-.guest1, .guest2, .guest3, .guest4, .guest5, .visit {
-  max-width: 100%;
-  background-color: #f2f9f9;
-  padding: 2em;
-  margin: 0 20% 0 20%;
-  margin-bottom: 3em;
+ .sweetpic {
+   display: flex;
+   max-width: 100%;
+ }
+ .sweet_info {
 
 }
 
-nav li:hover {
-  text-decoration: underline;
-}
 
 
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
    .main-menu {
      display: inline;
      margin-top: 2em;
      position: relative;
    }
-
    nav {
      align: right;
-   }
 
+   }
    h1 {
-     font-size: 1.5em;
-     padding: 20px;
+     font-size: 1.7em;
+     padding: 6px;
    }
-
    h2 {
-     font-size: 1.2em;
+     font-size: 1.3em;
    }
-
    h3 {
      font-size: 1em;
    }
 
- nav li {
-   padding: 1em 1em 0 0;
- }
- }
-
-@media screen and (min-width: 600px) {
-
-  nav li {
-    padding: 2em 1em 1em 0;
+   nav li {
+     padding: 1em 1em 0 0;
+   }
+   nav li:hover {
+     text-decoration: underline;
+   }
+  footer {
+    display: none;
   }
+}
