@@ -430,7 +430,6 @@ list-style-type: none;
    margin: 0 10% 0 10%
  }
  .logo {
-   max-width: 50px;
    margin-top: 1em;
    margin-right: 5em;
    margin-left: 5em;
@@ -460,13 +459,6 @@ list-style-type: none;
    display: inline-block;
    text-align: center;
    font-style: bold;
- }
- .logo {
-   max-width: 50px;
-   margin-top: 1em;
-   margin-right: 5em;
-   margin-left: 5em;
-   position: absolute;
  }
  h1 {
    font-size: 2em;
