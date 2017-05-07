@@ -430,11 +430,8 @@ list-style-type: none;
    margin: 0 10% 0 10%
  }
  .logo {
-   margin-top: 1em;
-   margin-right: 5em;
-   margin-left: 5em;
-   position: absolute;
-   padding: 25px;
+  width: 120px;
+  display: flex;
  }
  nav {
    margin: 1em;
@@ -473,7 +470,7 @@ list-style-type: none;
    padding-bottom: .7em;
  }
  h3 {
-   text-size: 1.5em;
+   font-size: 1.5em;
    color: #f0592d;
    text-transform: uppercase;
    padding: 1em 0 1em 0;
@@ -481,7 +478,7 @@ list-style-type: none;
    font-weight: bold;
  }
  h4 {
-   text-size: 3em;
+   font-size: 3em;
    color: #08b1a9;
    text-transform: uppercase;
    font-weight: regular;
@@ -491,8 +488,8 @@ list-style-type: none;
    margin-left: 2em;
    max-width: 990px;
  }
- .info {
 
+ .info {
    text-decoration: none;
    list-style-type: none;
    font-size: 1.2em;
@@ -503,19 +500,20 @@ list-style-type: none;
 
 .package {
 border-bottom: 1.2px solid #71cad2;
-
 }
+
  .sweet, .tree, .enchantment, .safari {
    background-color: #f2f9f9;
  padding: 1em;
  margin-bottom: 2 em;
  }
+ 
  .sweet {
    margin-top: 3em;
    display: flex;
  }
  .sweetpic {
-   
+
    max-width: 100%;
  }
  .sweet_info {
