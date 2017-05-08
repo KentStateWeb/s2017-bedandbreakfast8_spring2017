@@ -31,6 +31,34 @@
            </ul>
     </nav>
     <header>
+      <!-- Add the code for your slider -->
+<!-- Create a DIV with the class "carousel-cell" for each item you'd like in your slider.  Note, for images, it's best to resize them all to the same height and width -->
+<div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
+         >
+  <div class="carousel-cell">
+            <img src="cabin-creek-landing-bed-and-breakfast-marion-mt.jpg">
+    </div>
+  <div class="carousel-cell">
+            <img src="bed-and-breakfast-room-with-a-view-aj4vaekj.jpg">
+    </div>
+    <div class="carousel-cell">
+            <img src="breakfast-in-bed.jpg">
+    </div>
+    <div class="carousel-cell">
+            <img src="horseshoe adpic reduced.JPG">
+    </div>
+    <div class="carousel-cell">
+            <img src="Owners-Buckeye.jpg">
+    </div>
+    <div class="carousel-cell">
+            <img src="Sissinghurst-Bed-and-Breakfast-7.jpg">
+    </div>
+</div>
+
+<!-- Flickity hosts the appropriate CSS and JavaScript for you, so you don't need to download them if you don't want to.  Add the Flickity JavaScript and CSS File to the end of your HTML (before the closing body tag) -->
+
+<script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
       <h1>
         Buckeye Bed and Breakfast </h1>
         <h2> Experience Breathtaking Views and Warm Hospitality at Bed and Breakfasts in Cambridge, Ohio </h2>
@@ -76,6 +104,9 @@ Reservations must be secured by deposit or credit card equal to one night’s lo
       </div>
       <div class="reservations">
         <a href="#">Reservations</a>
+      </div>
+      <div class="guestbook">
+        <a href="guestbook.html">Guestbook</a>
       </div>
       <div class="contact">
         <a href="#">Contact</a>
