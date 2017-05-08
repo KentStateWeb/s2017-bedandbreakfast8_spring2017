@@ -429,6 +429,7 @@ list-style-type: none;
    margin-left: 2em;
    margin: 0 10% 0 10%
  }
+ 
  .logo {
   width: 120px;
  }
@@ -436,13 +437,13 @@ list-style-type: none;
  nav {
    text-align: right;
    background-color: #71cad2;
-   align: right;
+   /*align: right;*/
    color: white;
    text-decoration: none;
    display; flex;
  }
  nav ul {
-   margin-left: auto;
+   margin-left: 0 auto;
    list-style-type: none;
    padding: 2em;
    /*background-color: rgb(113, 202, 210);*/
@@ -458,18 +459,21 @@ list-style-type: none;
    text-align: center;
    font-style: bold;
  }
+
  h1 {
    font-size: 2em;
    color: #f0592d;
    text-align: center;
    padding-top: 1em;
  }
+
  h2 {
    font-size: 1.2em;
    color: #71cad2;
    text-align: center;
    padding-bottom: .7em;
  }
+
  h3 {
    font-size: 1.5em;
    color: #f0592d;
@@ -478,6 +482,7 @@ list-style-type: none;
    margin-left: 2em;
    font-weight: bold;
  }
+
  h4 {
    font-size: 1.2em;
    color: #08b1a9;
@@ -485,6 +490,7 @@ list-style-type: none;
    font-weight: regular;
    margin-left: 2em;
  }
+
  p {
    margin-left: 2em;
    max-width: 990px;
