@@ -431,7 +431,8 @@ list-style-type: none;
  }
 
  .logo {
-  width: 120px;
+  width: 110px;
+  margin: 2em;
  }
 
  nav {
@@ -451,7 +452,11 @@ list-style-type: none;
    text-transform: uppercase;
    font-style: bold;
    display: inline-flex;
-  
+
+ }
+
+ nav li {
+   margin-left: 40em;
  }
  nav a {
    color: white;
