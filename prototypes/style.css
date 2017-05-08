@@ -620,15 +620,14 @@ border-bottom: 1.2px solid #71cad2;
      margin-top: 2em;
      position: relative;
    }
-   nav {
+   /*nav {
      align: right;
-   }
+   }*/
 
    nav ul {
-     border: none;
      display: inline-block;
-
    }
+
    h1 {
      font-size: 1.7em;
      padding: 6px;
@@ -645,7 +644,9 @@ border-bottom: 1.2px solid #71cad2;
    }
    nav li:hover {
      text-decoration: underline;
+     font-weight: bolder;
    }
+
   footer {
     display: none;
   }
