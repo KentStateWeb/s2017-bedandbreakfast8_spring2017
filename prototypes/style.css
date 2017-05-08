@@ -429,13 +429,12 @@ list-style-type: none;
    margin-left: 2em;
    margin: 0 10% 0 10%
  }
- 
+
  .logo {
   width: 120px;
  }
 
  nav {
-   text-align: right;
    background-color: #71cad2;
    /*align: right;*/
    color: white;
@@ -443,13 +442,16 @@ list-style-type: none;
    display; flex;
  }
  nav ul {
-   margin-left: 0 auto;
+   margin-left: auto;
+   text-align: right;
    list-style-type: none;
    padding: 2em;
    /*background-color: rgb(113, 202, 210);*/
    /*justify-content: space-around;*/
    text-transform: uppercase;
    font-style: bold;
+   display: inline-flex;
+  
  }
  nav a {
    color: white;
