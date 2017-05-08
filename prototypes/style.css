@@ -455,9 +455,10 @@ list-style-type: none;
 
  }
 
- nav li {
+ nav li:first-child {
    margin-left: 40em;
  }
+
  nav a {
    color: white;
    text-decoration: none;
