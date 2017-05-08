@@ -427,7 +427,7 @@ list-style-type: none;
  /*End Footer Styling*/
  main {
    margin-left: 2em;
-   margin: 0 18% 0 18%
+   margin: 0 15% 0 15%
  }
 
  .logo {
@@ -442,6 +442,7 @@ list-style-type: none;
    text-decoration: none;
    display; flex;
  }
+
  nav ul {
    margin-left: auto;
    text-align: right;
@@ -452,7 +453,6 @@ list-style-type: none;
    text-transform: uppercase;
    font-style: bold;
    display: inline-flex;
-
  }
 
  nav li:first-child {
@@ -502,6 +502,8 @@ list-style-type: none;
  p {
    /*margin-left: 2em;*/
    max-width: 990px;
+   font-size: .9em;
+   line-height: 1.6;
  }
 
  .info {
@@ -532,10 +534,88 @@ border-bottom: 1.2px solid #71cad2;
    max-width: 100%;
  }
  .sweet_info {
+}
+
+/* Guestbook*/
+ .guest1, .guest2, .guest3, .guest4, .guest5 {
+  background-color: rgba(113, 202, 210, 0.2);
+  border-radius: 10px;
+  padding: 1.5em;
+  margin: 2em 0 0 0;
 
 }
 
+.row1 {
+  display: flex;
+}
 
+.guest1 {
+  width: 380px;
+  margin-right: 40px;
+}
+
+.guest2 {
+  width: 380px;
+  margin-right: 40px;
+}
+
+.guest3 {
+  width: 380px;
+  margin-right: 40px;
+}
+
+.row2 {
+  display: flex;
+  margin-bottom: 5em;
+}
+
+.guest4 {
+  width: 380px;
+  margin-right: 40px;
+}
+
+.guest5 {
+  width: 380px;
+  margin-right: 40px;
+}
+
+.visit {
+  width: 380px;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 975px) {
+
+  .row1, .row2 {
+    flex-direction: column;
+    width: 145%;
+  }
+
+  .guest1 {
+    width: 70%;
+  }
+
+  .guest2 {
+    width: 70%;
+  }
+
+  .guest3 {
+    width: 70%;
+  }
+
+  .guest4 {
+    width: 70%;
+  }
+
+  .guest5 {
+    width: 70%;
+  }
+
+  .visit {
+    width: 70%;
+  }
+
+}
 
 @media screen and (max-width: 600px) {
    .main-menu {
@@ -566,5 +646,9 @@ border-bottom: 1.2px solid #71cad2;
    }
   footer {
     display: none;
+  }
+
+  .row1, .row2 {
+    flex-direction: column;
   }
 }
