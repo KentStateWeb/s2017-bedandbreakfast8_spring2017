@@ -427,12 +427,12 @@ list-style-type: none;
  /*End Footer Styling*/
  main {
    margin-left: 2em;
-   margin: 0 10% 0 10%
+   margin: 0 18% 0 18%
  }
 
  .logo {
   width: 110px;
-  margin: 2em;
+  margin: 1.2em;
  }
 
  nav {
@@ -500,7 +500,7 @@ list-style-type: none;
  }
 
  p {
-   margin-left: 2em;
+   /*margin-left: 2em;*/
    max-width: 990px;
  }
 
