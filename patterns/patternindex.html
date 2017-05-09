@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pattern Library</title>
+    <meta name="Pattern Library" content="Collection and examples of five common patterns used on the Buckeye Bed and Breakfast website">
+  </head>
+  <body>
+
+    <h1> Pattern Library</h1>
+    <br>
+    <h2> Header and Navigation Bar</h2>
+
+    <a href="#menu" class="menu-link">
+      <div class="menu-link__hamburger">
+       <span></span>
+       <span></span>
+       <span></span>
+     </div>
+     <div class="menu-link__label">Menu</div>
+    </a>
+
+    <nav id="menu" role="navigation">
+        <a href="index.html"><img class= "logo" src="images/logo.png" alt= "logo"/></a>
+           <ul>
+             <li><a href="index.html">About</a></li>
+             <li><a href="rooms.html">Rooms</a></li>
+             <li><a href="#">Reservations</a></li>
+             <li><a href="guestbook.html">Guestbook</a></li>
+             <li><a href="#">Contact</a></li>
+           </ul>
+    </nav>
+
+    <h2> Boxes and Modal Buttons: Room Descriptions </h2>
+
+    <div class="package">
+    <h3>Packages</h3>
+    <p>These rooms have one or two queen-size beds, a full private bath, and air conditioning. Fireplaces
+    and/or private porches in some of the rooms of this Ohio Amish Country inn help create the perfect
+    setting for a romantic vacation. Many rooms also feature trundle beds.</p>
+    </div>
+    <div class="package">
+    </div>
+    <br>
+
+    <div class="tree">
+    <div class="sweetpic"><img src="images/rooms/sweetheart.png" alt="sweetheart suite photo"/>
+    </div>
+    <div class="sweet_info">
+      <h4>Sweetheart Suite</h4>
+      <ul class="info">
+      <li>Romance</li>
+      <li>Ecstacy</li>
+      <li>Chocolate</li>
+      <li>Strawberries</li>
+      <li>Loose rose pedals everywhere, I mean everywhere</li>
+    </ul>
+    </div>
+    </div>
+    <a class="btn" href="#">Sweetheart Suite</a>
+    <div class="modal" tabindex="-1">
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="modal__contents modal--transition" role="dialog" tabindex="-1">
+            <a class="modal__close" aria-label="Close modal" href="#">&times;</a>
+            <h1>Sweetheart Suite</h1>
+            <img src="images/rooms/sweetheart.png" alt="sweetheart suite photo"/>
+            <p>Your romantic master suite is appointed with a spacious king size bed, and French doors
+            which lead onto a second story balcony with intimate views of the Smoky Mountains. Your
+            private bath is appointed with a marble double vanity, marble tile and jet tub.</p>
+            <h5>Price</h5> <h5>Check Availability</h5>
+        </div>
+    </div>
+    </div>
+    <br>
+
+    <h2> Testimonials (Guestbook) Boxes and Format </h2>
+    <h6>Perfect romantic retreat . . . </h6>
+    <p>We would like to thank you for providing hospitality and amenities that made
+       our experience and stay here exceed our expectations. It was our perfect
+       post-tax season romantic retreat (I am a tax accountant.) God bless and keep
+       up the awesome job.
+     </p>
+
+      <h5>Ozzie and Marissa</h5>
+      <p class="from"> -Pittsburgh, Pennsylvania </p>
+    </div>
+
+  <div class= "guest2">
+    <h6>Wonderful, relaxing atmosphere . . . </h6>
+    <p>Thank you for sharing this beautiful home, it is gorgeous. Love all the art,
+       furniture and attention to details. Enjoyed the delicious food, especially
+       cookies and banana bread. Most of all appreciate the relaxing atmosphere – ahhh.
+       Will definitely share our stay with friends and family.
+     </p>
+
+     <h5>Sarah and Kevin</h5>
+     <p class="from"> -St. Louis, Missouri</p>
+  </div>
+
+  <div class="guest3">
+    <h6>Felt like home . . .</h6>
+     <p>Thank you for a wonderful stay. We plan on coming back whenever in Indy.
+       You made us feel at home and we plan to spread the word to anyone coming this way.
+     </p>
+
+    <h5>Tom and Marcy Reto</h5>
+    <p class="from"> -Indianapolis, Indiana </p>
+  </div>
+  </div>
+
+  <h2> Standard Headings Across Website </h2>
+  <h1>A Unique and Fabulous Getaway</h1>
+  <h2>Our Speciality Packages</h2>
+  <h3>Packages</h3>
+  <h4>Sweetheart Suite</h4>
+  <h5>Ozzie and Marissa</h5>
+  <h6>Perfect romantic retreat . . . </h6>
+  <p>These rooms have one or two queen-size beds, a full private bath, and air conditioning. Fireplaces
+  and/or private porches in some of the rooms of this Ohio Amish Country inn help create the perfect
+  setting for a romantic vacation. Many rooms also feature trundle beds.</p>
+
+  <h2> Footer: Consistent, Vanishes at Small Screen Sizes</2>
+
+    <footer>
+      <a href="#top">Back to Top</a>
+      <div class="footer-nav">
+        <div class="about">
+          <a href="about.html">About</a>
+        </div>
+        <div class="rooms">
+          <a href="rooms.html">Rooms</a>
+          <ul>
+            <li class="list"><a href="#">Sweetheart Suite</a></li>
+            <li class="list"><a href="#">Treetop Suite</a></li>
+            <li class="list"><a href="#">Enchantment Suite</a></li>
+            <li class="list"><a href="#">Safari Suite</a></li></ul>
+          </ul>
+        </div>
+        <div class="reservations">
+          <a href="#">Reservations</a>
+        </div>
+        <div class="guestbook">
+          <a href="guestbook.html">Guestbook</a>
+        </div>
+        <div class="contact">
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+    <!--this links to the ID at the top of the page-->
+    </footer>
+
+
+       <!-- The page content goes here -->
+      <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+  </body>
+</html>
