@@ -556,7 +556,7 @@ list-style-type: none;
  }
 
  p {
-   /*margin-left: 2em;*/
+
    max-width: 990px;
    font-size: .9em;
    line-height: 1.6;
@@ -590,6 +590,68 @@ border-bottom: 1.2px solid #71cad2;
    max-width: 100%;
  }
  .sweet_info {
+}
+
+/*Pattern Library*/
+
+.pathead {
+  border-top: none;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.muli {
+  text-align: center;
+}
+.colors {
+  display: flex;
+  justify-content: space-between;
+  border-top: none;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.headers {
+  margin-left: 0;
+  text-align: center;
+}
+
+.tart {
+  padding: 45px;
+  background-color: #f16735;
+  border-radius: 10px;
+  border: none;
+}
+
+.sunset {
+  padding: 45px;
+  border-radius: 10px;
+  background-color: #f0592d;
+  border: none;
+}
+
+.trop {
+  padding: 45px;
+  border-radius: 10px;
+  background-color: #08b1a9;
+  border: none;
+}
+
+.rain {
+  padding: 45px;
+  border-radius: 10px;
+  background-color: #71cad2;
+  border-top: none;
+}
+
+.acorn {
+  padding: 45px;
+  border-radius: 10px;
+  background-color: #61594d;
+  border: none;
 }
 
 /* Guestbook*/
@@ -769,10 +831,4 @@ h5 {
   .row1, .row2 {
     flex-direction: column;
   }
-}
-
-/*Pattern Library */
-
-.headers:first-child {
-  text-align: center;
 }
