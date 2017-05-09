@@ -456,14 +456,15 @@ list-style-type: none;
   margin: 1.5em;
   margin-right: 300px;
  }
+
 .kayak, .strong {
   width: 500px;
 
-  disply: flex;
+  display: flex;
   margin-left: auto;
 }
 
-}
+
  nav {
    background-color: #71cad2;
    color: white;
