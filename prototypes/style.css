@@ -454,7 +454,14 @@ list-style-type: none;
   width: 110px;
   margin: 1.2em;
  }
+.kayak, .strong {
+  width: 500px;
 
+  disply: flex;
+  margin-left: auto;
+}
+
+}
  nav {
    background-color: #71cad2;
    /*align: right;*/
@@ -639,6 +646,10 @@ border-bottom: 1.2px solid #71cad2;
   footer {
     font-size: .5em;
   }
+  .kayak, .strong {
+    width: 350px;
+    margin: 1.2em;
+  }
 }
 @media screen and (max-width: 600px) {
    .main-menu {
@@ -653,7 +664,10 @@ border-bottom: 1.2px solid #71cad2;
    nav ul {
      display: inline-block;
    }
-
+.kayak, .strong {
+  width: 200px;
+  margin: 1.2em;
+}
    h1 {
      font-size: 1.7em;
      padding: 6px;
