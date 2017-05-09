@@ -380,6 +380,7 @@ nav[role=navigation] li a {
 
  .carousel-cell {
      width: 100%;
+     padding-top: 1em;
  }
 
  .carousel-cell img {
@@ -474,11 +475,19 @@ list-style-type: none;
   margin-right: 300px;
  }
 
-.kayak, .strong {
+.kayak {
   width: 500px;
 
   display: flex;
   margin-left: auto;
+  padding-top: 3em;
+}
+.strong {
+  width: 500px;
+
+  display: flex;
+  margin-left: auto;
+  padding-bottom: 3em;
 }
 
 
