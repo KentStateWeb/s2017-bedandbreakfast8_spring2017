@@ -7,6 +7,23 @@ html {
  box-sizing: border-box;
 }
 
+#skip-to-content {
+  padding: 1em;
+  position: absolute;
+  top: -40px;
+  left: 1em;
+  z-index: 1000;
+  color: white;
+}
+
+#skip-to-content:focus {
+  position: absolute;
+  top: 0;
+  background: #4593ff;
+}
+
+
+
 footer {
    padding: 2em 2em;
    margin: 0 auto;
@@ -485,7 +502,6 @@ list-style-type: none;
 
 
  nav a {
-
    color: white;
    text-decoration: none;
    margin-bottom: 1em;
@@ -578,7 +594,7 @@ border-bottom: 1.2px solid #71cad2;
 
 h6 {
   padding-bottom: 10px;
-  border-bottom: 2px dashed rgba(240, 89, 45, 0.5);
+  border-bottom: 2px dotted rgba(240, 89, 45, 0.5);
   margin-right: 20px;
 }
 
@@ -586,7 +602,6 @@ h5 {
   border-top: 3px solid rgba(240, 89, 45, 0.6);
   padding-top: 15px;
   margin-right: 20px
-  margin-top: 0;
 }
 
 .from {
@@ -679,11 +694,11 @@ h5 {
   .kayak, .strong {
     width: 350px;
     margin: 1.2em;
-}
+
 
   .logo {
    width: 60px;
-   margin: 8em;
+   margin: ,8em;
    margin-right: 70px;
 
   }
