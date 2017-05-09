@@ -485,6 +485,7 @@ list-style-type: none;
 
 
  nav a {
+
    color: white;
    text-decoration: none;
    margin-bottom: 1em;
@@ -660,11 +661,11 @@ border-bottom: 1.2px solid #71cad2;
   .kayak, .strong {
     width: 350px;
     margin: 1.2em;
-
+}
 
   .logo {
    width: 60px;
-   margin: ,8em;
+   margin: 8em;
    margin-right: 70px;
 
   }
