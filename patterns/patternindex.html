@@ -11,29 +11,32 @@
 
     <h1> Pattern Library</h1>
     <br>
-    <h2> Header and Navigation Bar</h2>
+    <h5> Header and Navigation Bar</h5>
+    <body id="top">
+    <a id="skip-to-content" href="#content">skip to main content</a>
+      <a href="#menu" class="menu-link">
+        <div class="menu-link__hamburger">
+         <span></span>
+         <span></span>
+         <span></span>
+       </div>
+       <div class="menu-link__label">Menu</div>
+      </a>
 
-    <a href="#menu" class="menu-link">
-      <div class="menu-link__hamburger">
-       <span></span>
-       <span></span>
-       <span></span>
-     </div>
-     <div class="menu-link__label">Menu</div>
-    </a>
 
-    <nav id="menu" role="navigation">
-        <a href="index.html"><img class= "logo" src="images/logo.png" alt= "logo"/></a>
-           <ul>
-             <li><a href="index.html">About</a></li>
-             <li><a href="rooms.html">Rooms</a></li>
-             <li><a href="#">Reservations</a></li>
-             <li><a href="guestbook.html">Guestbook</a></li>
-             <li><a href="#">Contact</a></li>
-           </ul>
-    </nav>
+      <nav id="menu" role="navigation">
+        <a href="index.html"><img class= "logo" src= "../prototypes/images/logo.png" alt="buckeye bed and breakfst logo"/></a>
+             <ul>
+               <li><a href="index.html">About</a></li>
+               <li><a href="rooms.html">Rooms</a></li>
+               <li><a href="#">Reservations</a></li>
+               <li><a href="guestbook.html">Guestbook</a></li>
+               <li><a href="#">Contact</a></li>
+             </ul>
+      </nav>
 
-    <h2> Boxes and Modal Buttons: Room Descriptions </h2>
+    <h5> Boxes and Modal Buttons: Room Descriptions </h5>
+
 
     <div class="package">
     <h3>Packages</h3>
@@ -46,7 +49,7 @@
     <br>
 
     <div class="tree">
-    <div class="sweetpic"><img src="images/rooms/sweetheart.png" alt="sweetheart suite photo"/>
+    <div class="sweetpic"><img src="../prototypes/images/rooms/sweetheart.png" alt="sweetheart suite photo"/>
     </div>
     <div class="sweet_info">
       <h4>Sweetheart Suite</h4>
@@ -65,7 +68,7 @@
         <div class="modal__contents modal--transition" role="dialog" tabindex="-1">
             <a class="modal__close" aria-label="Close modal" href="#">&times;</a>
             <h1>Sweetheart Suite</h1>
-            <img src="images/rooms/sweetheart.png" alt="sweetheart suite photo"/>
+            <img src="../protoypes/images/rooms/sweetheart.png" alt="sweetheart suite photo"/>
             <p>Your romantic master suite is appointed with a spacious king size bed, and French doors
             which lead onto a second story balcony with intimate views of the Smoky Mountains. Your
             private bath is appointed with a marble double vanity, marble tile and jet tub.</p>
@@ -75,7 +78,10 @@
     </div>
     <br>
 
-    <h2> Testimonials (Guestbook) Boxes and Format </h2>
+    <h5> Testimonials (Guestbook) Boxes and Format </h5>
+
+  <div class="row1">
+  <div class= "guest1">
     <h6>Perfect romantic retreat . . . </h6>
     <p>We would like to thank you for providing hospitality and amenities that made
        our experience and stay here exceed our expectations. It was our perfect
@@ -110,18 +116,15 @@
   </div>
   </div>
 
-  <h2> Standard Headings Across Website </h2>
+  <h5> Standard Headings Across Website </h5>
   <h1>A Unique and Fabulous Getaway</h1>
   <h2>Our Speciality Packages</h2>
   <h3>Packages</h3>
   <h4>Sweetheart Suite</h4>
-  <h5>Ozzie and Marissa</h5>
-  <h6>Perfect romantic retreat . . . </h6>
-  <p>These rooms have one or two queen-size beds, a full private bath, and air conditioning. Fireplaces
-  and/or private porches in some of the rooms of this Ohio Amish Country inn help create the perfect
-  setting for a romantic vacation. Many rooms also feature trundle beds.</p>
 
-  <h2> Footer: Consistent, Vanishes at Small Screen Sizes</2>
+
+
+  <h5> Footer: Consistent, Vanishes at Small Screen Sizes</h5>
 
     <footer>
       <a href="#top">Back to Top</a>
@@ -152,8 +155,9 @@
     <!--this links to the ID at the top of the page-->
     </footer>
 
-
-       <!-- The page content goes here -->
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+    <link href="../prototypes/style.css" rel="stylesheet" type="text/css" media="screen"> </a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"></a>
+    <script src="../prototypes/buckeye.js"></script>
   </body>
 </html>

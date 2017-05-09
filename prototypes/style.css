@@ -770,3 +770,9 @@ h5 {
     flex-direction: column;
   }
 }
+
+/*Pattern Library */
+
+.headers:first-child {
+  text-align: center;
+}
