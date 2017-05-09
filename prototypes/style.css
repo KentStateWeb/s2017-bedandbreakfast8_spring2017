@@ -612,7 +612,7 @@ border-bottom: 1.2px solid #71cad2;
 
 .details {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .headers {
   margin-left: 0;
@@ -717,6 +717,19 @@ h5 {
 .visit {
   width: 380px;
   margin-right: 40px;
+  margin-left: 2em;
+}
+
+.how {
+  margin-left: 0;
+}
+.create {
+  background-color: #f0592d;
+  color: white;
+  padding: 14px;
+  border-radius: 7px;
+  width: 130px;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1100px) {
