@@ -455,7 +455,6 @@ list-style-type: none;
   width: 110px;
   margin: 1.5em;
   margin-right: 300px;
-
  }
 
  nav {
@@ -638,10 +637,22 @@ border-bottom: 1.2px solid #71cad2;
     width: 70%;
   }
 
+  .logo {
+   width: 90px;
+   margin: 1em;
+   margin-right: 150px;
+  }
+
 }
 @media screen and (max-width: 870px) {
   footer {
     font-size: .5em;
+  }
+
+  .logo {
+   width: 60px;
+   margin: ,8em;
+   margin-right: 70px;
   }
 }
 @media screen and (max-width: 600px) {
