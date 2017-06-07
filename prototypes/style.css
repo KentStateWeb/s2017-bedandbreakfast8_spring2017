@@ -474,19 +474,21 @@ list-style-type: none;
   margin: 1.5em;
   margin-right: 300px;
  }
-
+.kayakbox {
+  background-color: #f2f9f9;
+  padding: 3em;
+}
 .kayak {
   width: 500px;
-
-  display: flex;
-  margin-left: auto;
+display: block;
+  margin: auto;
   padding-top: 3em;
 }
 .strong {
   width: 500px;
 
-  display: flex;
-  margin-left: auto;
+  display: block;
+  margin: auto;
   padding-bottom: 3em;
 }
 
@@ -775,10 +777,13 @@ h5 {
     font-size: .5em;
   }
 
-  .kayak, .strong {
+  .kayak, .strong .kayakbox {
     width: 350px;
-    margin: 1.2em;
-
+    margin: auto;
+}
+.strong {
+  font-size: .7em;
+}
 
   .logo {
    width: 60px;
@@ -801,9 +806,12 @@ h5 {
      display: none;
    }
 
-.kayak, .strong {
+.kayak, .strong .kayakbox {
   width: 200px;
-  margin: 1.2em;
+  margin: auto;
+}
+.strong {
+  font-size: .4em;
 }
 
 
